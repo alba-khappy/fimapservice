@@ -1,0 +1,278 @@
+html {
+    box-sizing: border-box;
+    font-size: 20px;
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: "Gilroy-Light";
+    font-style: normal;
+    font-weight: 300;
+    src: local("Montserrat"),
+         url("./fonts/Gilroy-Light.woff2") format("woff2"),
+         url("./fonts/Gilroy-Light.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Gilroy-Extrabold";
+    font-style: normal;
+    font-weight: 300;
+    src: local("Montserrat"),
+         url("./fonts/Gilroy-Extrabold.woff2") format("woff2"),
+         url("./fonts/Gilroy-Extrabold.woff") format("woff");
+}
+
+body {
+    font-family: 'Gilroy-Light', sans-serif;
+    line-height: 1.5rem;
+    background-color: #FFF;
+    color: #2B2A28;
+    margin: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 3rem;
+}
+
+ul {
+    padding-left: 0;
+    margin: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+}
+
+button {
+    cursor: pointer;
+}
+
+input {
+    outline: none;
+}
+
+.primary-button {
+    display: block;
+    font-size: .9rem;
+    font-family: 'Gilroy-Light',sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 30px;
+    background-color: #118df0;
+    padding: 1rem;
+}
+
+.secondary-button {
+    display: block;
+    font-family: 'Gilroy-Light',sans-serif;
+    font-size: .9rem;
+    border-radius: 30px;
+    padding: .5rem 2rem;
+}
+
+.secondary-button--outlined {
+    color:#fff;
+    border: 1px solid #fff;
+}
+
+.secondary-button--filled {
+    background-color:#fff;
+    color: #1f5bff;
+}
+
+/*header*/
+
+.header__section {
+    position: relative;
+    background-color: rgb(35 39 44);
+}
+
+.header__section::after {
+    content: '';
+    position: absolute;
+    top: 4rem;
+    width: 100%;
+    height: 1px;
+    background-color: #2f353a;
+}
+
+.header__container {
+    padding-bottom: .5rem;
+}
+
+.header__logo {
+    display: block;
+    background: url(./images/Logo.png) center / contain no-repeat;
+    width: 8rem;
+    height: 4rem;
+}
+
+.header__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__top-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.header__nav-list {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 2rem;
+    color: #fff;
+}
+
+.header__nav-link {
+    display: block;
+    padding: .5rem 0;
+    font-size: .9rem;
+}
+
+.header__breadcrumbs-list {
+    color: #fff;
+    font-size: .7rem;
+}
+
+
+/*swiper*/
+
+.swiper__section {
+    position: relative;
+}
+
+.slick-slide img {
+    width:100%;
+}
+
+.swiper-slide {
+    height: 70vh;
+    width: 100%;
+    background: transparent top / cover no-repeat;
+}
+
+.swiper-slide--1 {
+    background-image: url(./images/slider-img-1.jpeg);
+}
+
+.swiper-slide--2 {
+    background-image: url(./images/slider-img-2.jpeg);
+}
+
+.swiper-slide--3 {
+    background-image: url(./images/slider-img-3.jpeg);
+}
+
+.swiper__content {
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    width: 46rem;
+    height: 16rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    background: url(./images/swiper-bg.svg) center / contain no-repeat;
+    color: #fff;
+    padding-left: 8rem;
+}
+
+/*about*/
+
+.about__container {
+}
+
+.about__h2 {
+    width: 80%;
+    text-align: center;
+    font-family: 'Gilroy-Extrabold',sans-serif;
+    font-size: 1.8rem;
+    color: #000;
+    margin: 0 auto 2rem;
+}
+
+.about__h2--strong {
+    color: #1f5bff;
+}
+
+.about__info-wrapper {
+    display: grid;
+    grid-template-columns: 45% 10% 45%;
+    margin-bottom: 3rem;
+}
+
+.about__info-list {
+    grid-area: 1/1/2/3;
+    box-shadow: 0 0 20px 0 rgb(0 0 0 / 10%);
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 2.5rem;
+    z-index: 1;
+}
+
+.about__info-img {
+    grid-area: 1/2/2/4;
+    border-radius: 2.5rem;
+    background: url(./images/about-img.jpeg) center / cover no-repeat;
+}
+
+/*catalog*/
+
+.catalog__section {
+
+}
+
+/*advantages*/
+
+.advantages-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.advantages-item {
+    max-width: 20rem;
+    box-shadow: 0 20px 20px 0 rgb(0 0 0 / 10%);
+    padding: 1rem; 
+}
+
+.advantages-item--1 {
+    background: url(./images/advantages-img-1.png) center / cover no-repeat;
+}
+
+.advantages-item--2 {
+    background: url(./images/advantages-img-1.png) center / cover no-repeat;
+}
+
+
+
+/*footer*/
