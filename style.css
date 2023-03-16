@@ -83,6 +83,8 @@ input {
     border-radius: 30px;
     background-color: #118df0;
     padding: 1rem;
+    outline: none;
+    border: none;
 }
 
 .secondary-button {
@@ -91,6 +93,8 @@ input {
     font-size: .9rem;
     border-radius: 30px;
     padding: .5rem 2rem;
+    outline: none;
+    border: none;
 }
 
 .secondary-button--outlined {
@@ -276,3 +280,37 @@ input {
 
 
 /*footer*/
+
+.footer__section {
+  background-color: #2f353a;  
+  color: #fff;
+}
+
+.footer__container {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.footer__about-section, .footer__business-lines-section, .footer__contacts-section {
+    width: 33%;
+}
+
+.footer__about-section {
+    max-width: 20rem;
+}
+
+.footer__heading {
+    text-transform: uppercase;
+    margin: 0 0 2rem 0;
+}
+
+.footer__about-description {
+    margin: 0 0 1rem 0;
+    font-size: .7rem;
+}
