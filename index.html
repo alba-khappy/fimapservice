@@ -15,9 +15,11 @@
             <div class="header__top">
                 <a href="" class="header__logo"></a>
                 <div class="header__top-links">
-                    <a href="tel:+79260550551" class="secondary-button secondary-button--filled">+7 926 055-05-51</a>
-                    <a href="" class="secondary-button secondary-button--outlined">Обратный звонок</a>
+                    <a href="tel:+79260550551" class="secondary-button secondary-button--filled header__button--number">+7 926 055-05-51</a>
+                    <a href="tel:+79260550551" class="header__button--call"></a>
+                    <a href="" class="secondary-button secondary-button--outlined header__button--back-call">Обратный звонок</a>
                 </div>
+                <button class="header__burger"></button>
             </div>
             <ul class="header__nav-list">
                 <li class="header__nav-item">
@@ -45,15 +47,17 @@
     </header>
     <main>
         <section class="swiper__section">
-            <div class="swiper">
-                <div class="swiper-slide swiper-slide--1"></div>
-                <div class="swiper-slide swiper-slide--2"></div>
-                <div class="swiper-slide swiper-slide--3"></div>
-            </div>
-            <div class="swiper__content">
-                <h1 class="">ПЫЛЕСОСЫ И РОТОРЫ</h1>
-                <p class="">Техника FIMAP со склада в Москве<br>– продажа, лизинг, сервисное обслуживание</p>
-                <a href="" class="primary-button">Перейти к каталогу</a>
+            <div class="container swiper__container">
+                <div class="swiper">
+                    <div class="swiper-slide swiper-slide--1"></div>
+                    <div class="swiper-slide swiper-slide--2"></div>
+                    <div class="swiper-slide swiper-slide--3"></div>
+                </div>
+                <div class="swiper__content">
+                    <h1 class="swiper__heading">ПЫЛЕСОСЫ И РОТОРЫ</h1>
+                    <p class="swiper__contaent-description">Техника FIMAP со склада в Москве<br>– продажа, лизинг, сервисное обслуживание</p>
+                    <a href="" class="primary-button">Перейти к каталогу</a>
+                </div>
             </div>
         </section>
         <section class="about__section">
@@ -61,15 +65,15 @@
                 <h2 class="about__h2">Компания FIMAPSERVICE предлагает <span class="about__h2--strong">комплексный подход к решению задачи уборки</span>  производственных и жилых помещений различного типа:</h2>
                 <div class="about__info-wrapper">
                     <ul class="about__info-list">
-                        <li class="">- продажу техники всего модельного ряда мирового лидера компании FIMAP (Италия) </li>
-                        <li class="">- гарантийное и постгарантийное обслуживание техники FIMAP</li>
-                        <li class="">- ремонт техники на объектах заказчика или в стационарных условиях ремонтного цеха</li>
-                        <li class="">- аренда техники с экипажем </li>
-                        <li class="">- лизинг оборудования в партнерстве с ведущими лизинговыми компаниями страны </li>
-                        <li class="">- доставка оборудования на объекты заказчика в любой регион РФ </li>
-                        <li class="">- комплектация техники аккумуляторными батареями любого типа и зарядными устройствами </li>
-                        <li class="">- снабжение покупателя расходным материалами и восстановление щеток </li>
-                        <li class="">- продажу запасных частей к оборудованию компании FIMAP и другим брендам итальянского производства </li>
+                        <li class="about__info-item">- продажу техники всего модельного ряда мирового лидера компании FIMAP (Италия) </li>
+                        <li class="about__info-item">- гарантийное и постгарантийное обслуживание техники FIMAP</li>
+                        <li class="about__info-item">- ремонт техники на объектах заказчика или в стационарных условиях ремонтного цеха</li>
+                        <li class="about__info-item">- аренда техники с экипажем </li>
+                        <li class="about__info-item">- лизинг оборудования в партнерстве с ведущими лизинговыми компаниями страны </li>
+                        <li class="about__info-item">- доставка оборудования на объекты заказчика в любой регион РФ </li>
+                        <li class="about__info-item">- комплектация техники аккумуляторными батареями любого типа и зарядными устройствами </li>
+                        <li class="about__info-item">- снабжение покупателя расходным материалами и восстановление щеток </li>
+                        <li class="about__info-item">- продажу запасных частей к оборудованию компании FIMAP и другим брендам итальянского производства </li>
                     </ul>
                     <div class="about__info-img"></div>
                 </div>
@@ -77,20 +81,53 @@
         </section>
         <section class="catalog__section">
             <div class="container catalog__container">
-                <h2 class="about__h2">Каталог</h2>
+                <h2 class="catalog__h2">Каталог</h2>
+                <ul class="catalog__list">
+                    <li class="catalog__item">
+                        <a href="" class="catalog__link">
+                            <div class="catalog__label">FIMAP Fimap</div>
+                            <img src="./images/product-1.jpeg" alt="товар" class="catalog__product-img">
+                            <p class="catalog__product-description">Компактная аккумуляторная поломоечная машина для уборки небольших помещений</p>
+                            <ul class="catalog__product-options-list">
+                                <li class=""><span class="blue-color-text">110 мм </span>Щетки</li>
+                                <li class="blue-color-text">680 м</li>
+                                <li class=""><span class="blue-color-text">1/1 л </span>Баки</li>
+                            </ul>
+                            <a href="" class="blue-color-text catalog__product-feature">Характеристики</a>
+                            <button class="primary-button catalog__product-button">Связаться</button>
+                        </a>
+                    </li>
+                    <li class="catalog__item">
+                        <a href="" class="catalog__link">
+                            <div class="catalog__label">FIMAP Maxima E</div>
+                            <img src="./images/product-2.jpeg" alt="товар" class="catalog__product-img">
+                            <p class="catalog__product-description">Сопровождаемая поломоечная машина с приводом хода для помещений средних размеров</p>
+                            <ul class="catalog__product-options-list">
+                                <li class=""><span class="blue-color-text">5070 мм </span>Щетки</li>
+                                <li class="blue-color-text">4700 м</li>
+                                <li class=""><span class="blue-color-text">60/65 л </span>Баки</li>
+                            </ul>
+                            <a href="" class="blue-color-text catalog__product-feature">Характеристики</a>
+                            <button class="primary-button catalog__product-button">Связаться</button>
+                        </a>
+                    </li>
+                </ul>
+                <a href="" class="primary-button catalog__button-show-more">Показать больше</a>
             </div>
         </section>
         <section class="advantages__section">
             <div class="container advantages__container">
                 <ul class="advantages-list">
-                    <li class="advantages-item advantages-item--1">
-                        <h3 class="">СЕРВИСНОЕ ОБСЛУЖИВАНИЕ И ЗАПЧАСТИ</h3>
-                        <p class="">Собственная сервисная служба, запчасти со склада в Москве</p>
+                    <li class="advantages-item">
+                        <img src="./images/advantages-img-1.png" alt="" class="advantages-img advantages-img--1">
+                        <h3 class="advantages-item-heading blue-color-text">СЕРВИСНОЕ ОБСЛУЖИВАНИЕ И ЗАПЧАСТИ</h3>
+                        <p class="advantages-item-description">Собственная сервисная служба, запчасти со склада в Москве</p>
                         <a href="" class="primary-button">Подробнее</a>
                     </li>
-                    <li class="advantages-item advantages-item--2">
-                        <h3 class="">СЕРВИСНОЕ ОБСЛУЖИВАНИЕ И ЗАПЧАСТИ</h3>
-                        <p class="">Собственная сервисная служба, запчасти со склада в Москве</p>
+                    <li class="advantages-item">
+                        <img src="./images/advantages-img-2.png" alt="" class="advantages-img advantages-img--2">
+                        <h3 class="advantages-item-heading blue-color-text">ЛИЗИНГ И АРЕНДА ТЕХНИКИ</h3>
+                        <p class="advantages-item-description">Лизинг с небольшим первоначальным взносом 20 %</p>
                         <a href="" class="primary-button">Подробнее</a>
                     </li>
                 </ul>
@@ -105,15 +142,15 @@
                 <li class="footer__about-section">
                     <h3 class="footer__heading">О НАС</h3>
                     <p class="footer__about-description">Компания FIMAP является признанным национальным и международным лидером в производстве профессиональной уборочной техники</p>
-                    <button class="primary-button">СВЯЗАТЬСЯ</button>
+                    <button class="primary-button footer__button-call">СВЯЗАТЬСЯ</button>
                 </li>
                 <li class="footer__business-lines-section">
                     <h3 class="footer__heading">НАПРАВЛЕНИЯ</h3>
                     <ul class="">
-                        <li class=""><a href="">ПОКУПКА</a></li>
-                        <li class=""><a href="">АРЕНДА</a></li>
-                        <li class=""><a href="">СЕРВИС</a></li>
-                        <li class=""><a href="">ЗАПЧАСТИ</a></li>
+                        <li class="footer__business-lines-item"><a href="" class="footer__business-lines-link">ПОКУПКА</a></li>
+                        <li class="footer__business-lines-item"><a href="" class="footer__business-lines-link">АРЕНДА</a></li>
+                        <li class="footer__business-lines-item"><a href="" class="footer__business-lines-link">СЕРВИС</a></li>
+                        <li class="footer__business-lines-item"><a href="" class="footer__business-lines-link">ЗАПЧАСТИ</a></li>
                     </ul>
                 </li>
                 <li class="footer__contacts-section">
@@ -122,7 +159,7 @@
                     <p class="">ИП 3232341423</p>
                 </li>
             </ul>
-            <a href="">Политика конфиденциальности</a>
+            <a href="" class="footer__privacy-policy">Политика конфиденциальности</a>
         </div>
     </footer>
 
@@ -132,6 +169,8 @@
     <script type="text/javascript">
         $(document).ready(function(){
           $('.swiper').slick({
+            autoplay:true,
+            autoplaySpeed:3000,
             centerMode: false,
           });
         });
