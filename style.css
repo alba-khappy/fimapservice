@@ -794,6 +794,10 @@ input {
         text-align: center;
         width: 100%;
     }
+
+    .text-content__info {
+        max-width: 100%;
+    }
     
 }
 
